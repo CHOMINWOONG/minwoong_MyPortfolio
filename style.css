@@ -50,3 +50,10 @@ body, ul, li {
     font-weight: bold;
     font-size: 1.2rem;
   }
+
+  /* 메인 이미지 박스 */
+  .main-con > .img-con > h1 {
+    margin-top: 20%;
+    color: #fff;
+    font-size: 4rem;
+  }
