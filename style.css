@@ -25,10 +25,6 @@ body, ul, li {
     text-align: center;
   }
   /* 메뉴 상단바 */
-  .menu-con > .menu-bar > .menu-box > ul {
-    display: flex;
-    
-  }
   .menu-con > .menu-bar > .menu-box > div {
     flex-grow: 1;
     
@@ -51,9 +47,46 @@ body, ul, li {
     font-size: 1.2rem;
   }
 
+  .menu-con > .menu-bar > .menu-box > ul > li > a:active {
+    color: #38E5F5; /* 클릭 시 색상 */
+  }
+
   /* 메인 이미지 박스 */
-  .main-con > .img-con > h1 {
+  .main-con {
+    position: relative;
+  }
+  .main-con > h1 {
     margin-top: 20%;
     color: #fff;
     font-size: 4rem;
+    position: relative;
+    z-index: 1;
+  }
+  .main-con > .img-con {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-45%, 40%);
+  }
+  .main-con > .img-con > img {
+    border: 1px solid red;
+    width: 286px;
+    height: 488px;
+    z-index: 0;
+  }
+  .main-con > .img-con > .img-box > nav {
+    position: absolute;
+    bottom: -20px; /* Adjust this value to move the text up or down */
+    left: 50%;
+    transform: translate(-50%, -250%);
+    color: white;
+    font-size: 2rem;
+  }
+  .main-con > .img-con > .img-box > .scroll-tx {
+    position: absolute;
+    bottom: -20px; /* Adjust this value to move the text up or down */
+    left: 50%;
+    transform: translate(-50%, -150%);
+    color: white;
+    font-size: 1.5rem;
   }
