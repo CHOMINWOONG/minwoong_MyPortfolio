@@ -15,10 +15,6 @@ a {
 body {
   background-color: #0A192F;
 }
-
-  body {
-    background-color: 0A192F;
-  }
   .flex {
     display: flex;
   }
@@ -28,34 +24,9 @@ body {
   .ta-c {
     text-align: center;
   }
-  /* 메뉴 상단바 */
-  .menu-con > .menu-bar > .menu-box > div {
-    flex-grow: 1;
-    
+  .height-100 {
+    height: 100%;
   }
-  .menu-con > .menu-bar > .menu-box > ul {
-    margin-right: 100px;
-  }
-  .menu-con > .menu-bar > .menu-box > ul > li{
-    color: #fff;
-    width: 120px;
-    height: 100px;
-    
-  }
-
-
-.flex {
-  display: flex;
-}
-
-
-.jc-c {
-  justify-content: center;
-}
-
-.ta-c {
-  text-align: center;
-}
 
 /* 메뉴 상단바 */
 .menu-con > .menu-bar > .menu-box > div {
@@ -105,7 +76,6 @@ body {
 }
 
 .main-con > .img-con > img {
-  border: 1px solid red;
   width: 286px;
   height: 488px;
   z-index: 0;
@@ -149,47 +119,37 @@ body {
   opacity: 0;
 }
 
-  .menu-con > .menu-bar > .menu-box > ul > li > a:active {
-    color: #38E5F5; /* 클릭 시 색상 */
+    /* about 자기소개 바 */
+  .second-page > .about-con > .about {
+      color: #87CEEB;
+      padding-top: 100px;
   }
 
-  /* 메인 이미지 박스 */
-  .main-con {
-    position: relative;
+  .second-page .about-con > .myself > div {
+      margin: 0 100px;
+      margin-top: 30px;
+      color: #fff;
   }
-  .main-con > h1 {
-    margin-top: 20%;
-    color: #fff;
-    font-size: 4rem;
-    position: relative;
-    z-index: 1;
+  .second-page .about-con > .myself > div > h1 {
+      font-size: 1.5rem;
   }
-  .main-con > .img-con {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-45%, 40%);
+  .second-page .about-con > .myself > div > span {
+      font-size: 1.3rem;
   }
-  .main-con > .img-con > img {
-    border: 1px solid red;
-    width: 286px;
-    height: 488px;
-    z-index: 0;
+
+  /* archiving 바, 블로그 */
+
+  .second-page > .archiving-con > div {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin: 50px 0 40px 400px;
   }
-  .main-con > .img-con > .img-box > nav {
-    position: absolute;
-    bottom: -20px; /* Adjust this value to move the text up or down */
-    left: 50%;
-    transform: translate(-50%, -250%);
-    color: white;
-    font-size: 2rem;
+
+  .second-page > .blog-con > .blog-bar {
+    width: 1120px;
+    height: 342px;
+    border: 1px solid #fff;
   }
-  .main-con > .img-con > .img-box > .scroll-tx {
-    position: absolute;
-    bottom: -20px; /* Adjust this value to move the text up or down */
-    left: 50%;
-    transform: translate(-50%, -150%);
-    color: white;
-    font-size: 1.5rem;
-  }
+
 
