@@ -66,3 +66,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.visible');
     elements.forEach(element => observer.observe(element));
 });
+
+// 마우스를 대면 위로 뜨는 JS
+document.addEventListener("DOMContentLoaded", () => {
+    const blogItems = document.querySelectorAll('.blog-con div');
+
+    blogItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.zIndex = '10';
+        });
+
+        item.addEventListener('mouseout', () => {
+            item.style.zIndex = '1';
+        });
+    });
+});
