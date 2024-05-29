@@ -152,4 +152,45 @@ body {
     border: 1px solid #fff;
   }
 
+  .second-page > .blog-con > .blog-bar > div {
+    width: 333px;
+    height: 278px;
+    border-radius: 23px;
+    margin: 32px 16px 32px 16px;
+    font-weight: bold;
+  }
+  .second-page > .blog-con > .blog-bar > div:nth-child(1){
+    background-color: #000;
+    color: #fff;
+  }
+  .second-page > .blog-con > .blog-bar > div:nth-child(2){
+    background-color: #353A40;
+    color: #fff;
+  }
+  .second-page > .blog-con > .blog-bar > div:nth-child(3){
+    background-color: #fff;
+    color: #000;
+  }
+  .second-page > .blog-con > .blog-bar > div > img {
+    margin-bottom: 30px;
+  }
+  .second-page > .blog-con > .blog-bar > .naver > img {
+    margin-bottom: 18px;
+  }
+
+  .second-page > .blog-con > .blog-bar > div > div {
+    margin-top: 40px;
+  }
+
+
+  .second-page > .blog-con > .blog-bar > div > div > span {
+    display: block;
+    text-align: left;
+    margin: 13px;
+  }
+
+  
+  
+
+
 
