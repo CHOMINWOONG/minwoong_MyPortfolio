@@ -31,6 +31,39 @@ body {
     height: 100%;
   }
 
+  /* img color */
+  .HTML {
+    color: #E65100;
+  }
+  .CSS {
+    color: #039BE5;
+  }
+  .JS {
+    color: #FFD600;
+  }
+  .Jquery {
+    color: #039BE5;
+  }
+  .Tail {
+    color: #00ACC1;
+  }
+  .Recoil {
+    color: #08D9FD;
+  }
+  .Hook {
+    color: #08D9FD;
+  }
+  .JAVA {
+    color: #E65100;
+  }
+  .MYsql {
+    color: #CA7F06;
+  }
+  .Sts {
+    color: #BAE0BD;
+  }
+  
+
 /* 메뉴 상단바 */
 .menu-con > .menu-bar > .menu-box > div {
   flex-grow: 1;
@@ -228,7 +261,56 @@ body {
     height: 500px;
     border: 1px solid #fff;
     margin-left: 350px;
+    align-items: flex-start;
+    color: #38E5F5;
   }
+
+  .third-page > .skill-con > .skill-box > img {
+    margin: 10px;
+    width: 100px; /* 이미지 크기에 따라 조절하세요 */
+    height: auto; /* 이미지 비율 유지 */
+}
+.third-page > .skill-con > .skill-box > p {
+    text-align: center;
+}
+.third-page > .skill-con > .skill-box > .divider {
+    border-left: 2px solid black;
+    height: 100%;
+}
+
+.third-page > .skill-con > .skill-box > .section-content {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.third-page > .skill-con > .skill-box > .left-section > .section-content,
+.third-page > .skill-con > .skill-box > .right-section > .section-content {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 5px; /* 여백 조절을 위해 추가 */
+}
+
+.third-page > .skill-con > .skill-box > .right-section > .section-content > div {
+  margin: 20px;
+}
+.third-page > .skill-con > .skill-box > .left-section > .section-content > div {
+  margin: 20px 0 20px 0;
+}
+
+.third-page > .skill-con > .skill-box > .left-section > .section-content > div,
+.third-page > .skill-con > .skill-box > .right-section > .section-content > div {
+    flex-basis: calc(25% - 20px); /* 20px는 margin 값의 합 */
+}
+
+.third-page > .skill-con > .skill-box > .left-section > .section-content > div img,
+.third-page > .skill-con > .skill-box > .right-section > .section-content > div img {
+    height: auto;
+    margin: 3px; /* 이미지 사이의 간격을 조절하기 위해 추가 */
+
+}
+
 
   
   
