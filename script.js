@@ -109,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function SectionTop__init() {
-        var wrapMarginRight = 64;
         var $contentLi = $(".section-top__content > li");
         var $bgLi = $(".section-top__bg > li");
         var $bgLiChild = $bgLi.find(" > div");
@@ -117,8 +116,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var animationDuration = 600;
 
         var updateBgLiChildWidth = function () {
-            var width = windowWidth - wrapMarginRight;
-            $bgLiChild.stop().width(width);
+            var width = windowWidth;
+            $bgLiChild.stop().width(windowWidth);
         };
 
         $window.resize(function () {
