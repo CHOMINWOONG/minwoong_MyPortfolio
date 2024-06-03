@@ -40,7 +40,6 @@ body {
   
   .con-min-width {
     min-width:1200px;  
-    min-width:300px;
   }
   .width-25p {
     width:25%;
@@ -48,10 +47,6 @@ body {
 
   .relative {
     position:relative;
-  }
-
-  .height-100vh {
-    height: 100vh;
   }
 
   .flex-left {
@@ -364,7 +359,7 @@ body {
 /* .section-top 시작 */
 .section-top__wrap {
   outline: 1px solid red;
-  max-width: 1600px;
+  max-width: 2400px;
   margin: 0 auto;
 }
 
@@ -373,7 +368,7 @@ body {
 }
 
 .section-top__content > li {
-  width: 100%;
+  width: 120%;
   position:relative;
   z-index:2;
   color:white;
@@ -447,7 +442,6 @@ body {
 .section-top__bg > li > .img-style {
   flex-direction: column;
   padding: 120px 0 0 80px;
-  background-color: gold;
 }
 
 .section-top__bg > li > .img-style > .Todo-box {
@@ -474,6 +468,8 @@ body {
   gap: 10px; /* 버튼 사이의 간격 조정 */
 }
 
+
+
 .button {
   background-color: #000;
         border: none;
@@ -488,7 +484,10 @@ body {
 .button:hover {
   background-color: #0056b3;
 }
-
+.img-style .button {
+  position: relative; /* 부모보다 높은 z-index */
+  z-index: 1;
+}
 /* =========== 다섯번째 페이지 ==========*/
 .Fifth-page > .contact-con {
   flex-direction: column;
