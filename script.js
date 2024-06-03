@@ -176,3 +176,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     SectionTop__init();
 });
+
+// HTML 문서가 로드된 후에 JavaScript 코드를 실행합니다.
+document.addEventListener('DOMContentLoaded', function() {
+    // 모든 버튼 요소를 선택합니다.
+    var buttons = document.querySelectorAll('.button');
+
+    // 모든 버튼에 클릭 이벤트를 등록합니다.
+    buttons.forEach(function(button) {
+        // 각 버튼이 클릭되었을 때 이벤트 핸들러를 등록합니다.
+        button.addEventListener('click', function(event) {
+            // 기본 동작을 막습니다. (링크의 이동을 막음)
+            event.preventDefault();
+            
+            // 클릭된 버튼의 href 속성에 지정된 URL로 이동합니다.
+            window.location.href = button.getAttribute('href');
+        });
+    });
+});

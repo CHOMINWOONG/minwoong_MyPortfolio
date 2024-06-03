@@ -54,6 +54,10 @@ body {
     height: 100vh;
   }
 
+  .flex-left {
+    justify-content: left;
+  }
+
   /* img color */
   .HTML {
     color: #E65100;
@@ -339,11 +343,12 @@ body {
 .fourth-page > .project-font {
   color: #87CEEB;
 }
+
 .fourth-page > .project-font > div {
   font-weight: bold;
   font-size: 2rem;
   margin-top: 60px;
-  margin-bottom:
+  margin-bottom: 60px;
 }
 
 .fourth-page > .project-menu-con {
@@ -429,4 +434,39 @@ body {
 
 .section-top__bg > li:nth-child(4) > div {
   left:-300%;
+}
+
+.section-top__bg > li > .img-style {
+  flex-direction: column;
+  padding: 120px 0 0 80px;
+}
+
+.section-top__bg > li > .img-style > .text-box {
+  background-color: #fff;
+  border: 2px solid #000;
+  width: 300px;
+  padding: 20px 10px 20px 20px;
+  border-radius: 15px;
+  transform: translate(360px, 550px);
+}
+
+.button-wrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px; /* 버튼 사이의 간격 조정 */
+}
+
+.button {
+  background-color: #000;
+        border: none;
+        border-radius: 12px;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 10px;
+        padding: 4px 8px;
+        transition: all .2s linear;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }
