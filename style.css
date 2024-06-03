@@ -58,6 +58,10 @@ body {
     justify-content: left;
   }
 
+  .Contact {
+    color: #87CEEB;
+  }
+
   /* img color */
   .HTML {
     color: #E65100;
@@ -364,6 +368,10 @@ body {
   margin: 0 auto;
 }
 
+.section-top__content {
+  height: 70%;
+}
+
 .section-top__content > li {
   width: 100%;
   position:relative;
@@ -470,3 +478,52 @@ body {
 .button:hover {
   background-color: #0056b3;
 }
+
+/* =========== 다섯번째 페이지 ==========*/
+.Fifth-page > .contact-con {
+  flex-direction: column;
+}
+
+.Fifth-page > .contact-con > .contact-box {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  width: 744px;
+  height: 473px;
+  border: 1px solid #fff;
+  flex-direction: column;
+}
+
+.Fifth-page > .contact-con > .contact-box > h1{
+  margin-bottom: 60px;
+  font-size: 2.3rem;
+}
+
+.Fifth-page > .contact-con > .contact-box > div {
+  color: #fff;
+  padding: 15px 0 15px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.Fifth-page > .contact-con > .contact-box > div:nth-child(4){
+  margin: 30px 0 30px 0;
+}
+
+.Fifth-page > .contact-con > .bye-text {
+  color: #fff;
+  font-size: 1.4rem;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Jeju Myeongjo', serif;
+}
+
+.Fifth-page > .contact-con > .bye-text > p {
+  margin: 5px 0;
+  font-family: 'Jeju Myeongjo', serif;
+}
+
+.Fifth-page > .contact-con > .bye-text > p > span {
+  color: #08D9FD;
+}
+
+
