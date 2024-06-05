@@ -40,6 +40,7 @@ body {
   
   .con-min-width {
     min-width:1200px;  
+    min-width:300px;
   }
   .width-25p {
     width:25%;
@@ -47,6 +48,10 @@ body {
 
   .relative {
     position:relative;
+  }
+
+  .height-100vh {
+    height: 100vh;
   }
 
   .flex-left {
@@ -87,6 +92,16 @@ body {
   }
   .Sts {
     color: #BAE0BD;
+  }
+
+  /* color */
+  
+  .Todo {
+    background-color: #244A87;
+    color: #fff;
+  } 
+  .KaKao {
+    background-color: #FFEF6B;
   }
 
   /* =========== 메인 페이지 ==========*/
@@ -358,8 +373,7 @@ body {
 
 /* .section-top 시작 */
 .section-top__wrap {
-  outline: 1px solid red;
-  max-width: 2400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -368,7 +382,7 @@ body {
 }
 
 .section-top__content > li {
-  width: 120%;
+  width: 100%;
   position:relative;
   z-index:2;
   color:white;
@@ -418,6 +432,33 @@ body {
   background-repeat:no-repeat;
 }
 
+.section-top__content {
+  overflow: hidden;
+}
+
+
+.section-top__content .content-box {
+  position: absolute;
+  width: 100%;
+  color: #000;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(400px);
+  transition: transform .5s;
+}
+
+.content-txt {
+  padding: 22px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.section-top__content > li:hover .content-box {
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+}
+
+
 .section-top__bg > li.active > div {
   opacity:1;
   z-index:1;
@@ -442,6 +483,7 @@ body {
 .section-top__bg > li > .img-style {
   flex-direction: column;
   padding: 120px 0 0 80px;
+  background-color: gold;
 }
 
 .section-top__bg > li > .img-style > .Todo-box {
@@ -468,26 +510,98 @@ body {
   gap: 10px; /* 버튼 사이의 간격 조정 */
 }
 
+/* button CSS */
 
-
-.button {
-  background-color: #000;
-        border: none;
-        border-radius: 12px;
-        color: #fff;
-        cursor: pointer;
-        margin-right: 10px;
-        padding: 4px 8px;
-        transition: all .2s linear;
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+  outline: none;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 
-.button:hover {
-  background-color: #0056b3;
+
+.btn-12{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
 }
-.img-style .button {
-  position: relative; /* 부모보다 높은 z-index */
-  z-index: 1;
+.btn-12 span {
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  border: 2px solid #000;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
+.btn-12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  background: #e0e5ec;
+  color: #e0e5ec;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
 /* =========== 다섯번째 페이지 ==========*/
 .Fifth-page > .contact-con {
   flex-direction: column;
@@ -540,3 +654,5 @@ body {
 .Kakao-box {
   z-index: 999;
 }
+
+
