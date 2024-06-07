@@ -602,6 +602,81 @@ button {
   transform: rotateX(-90deg);
 }
 
+/* button2 */
+.btn {
+  margin: 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  background-color: #4EC0E9;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+.btn-jittery {
+  -webkit-animation: jittery 4s infinite;
+          animation: jittery 4s infinite;
+}
+
+&-jittery {
+  animation: jittery 4s infinite;
+}
+
+@-webkit-keyframes jittery {
+  5%, 50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
+}
+
+@keyframes jittery {
+  5%, 50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
+}
+
 /* =========== 다섯번째 페이지 ==========*/
 .Fifth-page > .contact-con {
   flex-direction: column;
@@ -627,6 +702,11 @@ button {
   padding: 15px 0 15px 0;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.Fifth-page > .contact-con > .contact-box > div > div {
+  padding: 20px 30px 20px 30px;
+  display: inline-block;
 }
 
 .Fifth-page > .contact-con > .contact-box > div:nth-child(4){
