@@ -1,3 +1,6 @@
+@import url('//fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+
+
 /* 노말 라이즈 */
 body, ul, li {
   margin: 0;
@@ -104,7 +107,7 @@ body {
     color: #fff;
   } 
   .KaKao {
-    background-color: #FFEF6B;
+    background-color: #FEDE22;
   }
 
   /* =========== 메인 페이지 ==========*/
@@ -143,7 +146,7 @@ body {
 }
 
 .main-con > h1 {
-  margin-top: 20%;
+  margin-top: 13%;
   color: #fff;
   font-size: 4rem;
   position: relative;
@@ -152,7 +155,7 @@ body {
 
 .main-con > .img-con {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
   transform: translate(-45%, 40%);
 }
@@ -247,7 +250,7 @@ body {
   }
 
   .second-page > .blog-con > .blog-bar > div:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     z-index: 10;
   }
 
@@ -317,7 +320,7 @@ body {
     height: 500px;
     border: 1px solid #fff;
     margin-left: 350px;
-    align-items: flex-start;
+    align-items: center;
     color: #38E5F5;
   }
 
@@ -352,7 +355,7 @@ body {
   margin: 20px;
 }
 .third-page > .skill-con > .skill-box > .left-section > .section-content > div {
-  margin: 20px 0 20px 0;
+  margin: 20px 0 20px 10px;
 }
 
 .third-page > .skill-con > .skill-box > .left-section > .section-content > div,
@@ -463,10 +466,18 @@ body {
 }
 
 .content-txt {
-  padding: 22px;
-  border: 2px solid black;
-  border-radius: 10px;
+  padding: 3px 0 0 20px;
 }
+
+.content-txt > div:nth-child(2),
+.content-txt > div:nth-child(3) {
+  font-size: 16px;
+}
+
+.content-txt > div {
+  font-size: 13px;
+}
+
 
 .section-top__content > li:hover .content-box {
   left: 50%;
@@ -557,6 +568,10 @@ button {
   display: inline-block;
 }
 
+.Kakao-box > .button-wrapper > .custom-btn {
+  border: 2px solid #333030;
+}
+
 
 .btn-12{
   position: relative;
@@ -629,68 +644,7 @@ button {
   font-size: 1.1rem;
   border-radius: 10px;
 }
-.btn-jittery {
-  -webkit-animation: jittery 4s infinite;
-          animation: jittery 4s infinite;
-}
 
-&-jittery {
-  animation: jittery 4s infinite;
-}
-
-@-webkit-keyframes jittery {
-  5%, 50% {
-    transform: scale(1);
-  }
-  10% {
-    transform: scale(0.9);
-  }
-  15% {
-    transform: scale(1.15);
-  }
-  20% {
-    transform: scale(1.15) rotate(-5deg);
-  }
-  25% {
-    transform: scale(1.15) rotate(5deg);
-  }
-  30% {
-    transform: scale(1.15) rotate(-3deg);
-  }
-  35% {
-    transform: scale(1.15) rotate(2deg);
-  }
-  40% {
-    transform: scale(1.15) rotate(0);
-  }
-}
-
-@keyframes jittery {
-  5%, 50% {
-    transform: scale(1);
-  }
-  10% {
-    transform: scale(0.9);
-  }
-  15% {
-    transform: scale(1.15);
-  }
-  20% {
-    transform: scale(1.15) rotate(-5deg);
-  }
-  25% {
-    transform: scale(1.15) rotate(5deg);
-  }
-  30% {
-    transform: scale(1.15) rotate(-3deg);
-  }
-  35% {
-    transform: scale(1.15) rotate(2deg);
-  }
-  40% {
-    transform: scale(1.15) rotate(0);
-  }
-}
 
 /* =========== 다섯번째 페이지 ==========*/
 .Fifth-page > .contact-con {
@@ -729,16 +683,16 @@ button {
 }
 
 .Fifth-page > .contact-con > .bye-text {
-  color: #fff;
   font-size: 1.4rem;
   flex-direction: column;
   text-align: center;
-  font-family: 'JejuMyeongjo';
+  font-family: 'Jeju Myeongjo', serif;
 }
 
 .Fifth-page > .contact-con > .bye-text > p {
   margin: 5px 0;
-  font-family: 'JejuMyeongjo';
+  font-family: 'Jeju Myeongjo', serif;
+  color: white !important;
 }
 
 .Fifth-page > .contact-con > .bye-text > p > span {
