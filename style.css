@@ -63,6 +63,9 @@ body {
   }
 
   /* img color */
+  .React {
+    color: #08D9FD;
+  }
   .HTML {
     color: #E65100;
   }
@@ -271,6 +274,18 @@ body {
     margin-top: 40px;
   }
 
+  .second-page > .blog-con > .blog-bar > .github > a:hover,
+  .second-page > .blog-con > .blog-bar > .velog > a:hover {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+  .second-page > .blog-con > .blog-bar > .naver > a:hover {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+
 
   .second-page > .blog-con > .blog-bar > div > div > span {
     display: block;
@@ -315,7 +330,7 @@ body {
     text-align: center;
 }
 .third-page > .skill-con > .skill-box > .divider {
-    border-left: 2px solid black;
+    border-left: 1px solid #fff;
     height: 100%;
 }
 
